@@ -1,0 +1,73 @@
+&control
+    calculation = ''
+    restart_mode = 'from_scratch'
+    prefix = 'Bi2201'
+    tstress = .true.
+    tprnfor = .true.
+    pseudo_dir = '/home/PHONONS/pseudo/'
+    outdir = '/home/PHONONS/tmp/'
+    forc_conv_thr = 1.0d-2
+/
+
+&system
+    ibrav = 0
+    nat = 22
+    ntyp = 5
+    ecutwfc = 30.0
+    ecutrho = 200.0
+    smearing = 'gauss'
+    occupations = 'smearing'
+    degauss = 0.02
+/
+
+&electrons
+    electron_maxstep = 100
+    diagonalization = 'david'
+    mixing_mode = 'local-TF'
+    mixing_beta = 0.7
+    conv_thr = 1.0d-5
+/
+
+&ions
+/
+
+&cell
+/
+
+ATOMIC_SPECIES
+   Bi  208.9804   bi_pbesol_v1.uspp.F.UPF
+   Sr   87.62     sr_pbesol_v1.uspp.F.UPF
+   Cu   63.546    cu_pbesol_v1.2.uspp.F.UPF
+    O   15.9994    o_pbesol_v1.2.uspp.F.UPF
+
+CELL_PARAMETERS angstrom
+    3.633890  0.000000   0.000000
+    0.000000  3.633890   0.000000
+    0.000000  0.000000  24.876950
+
+ATOMIC_POSITIONS crystal
+    Cu  0.000000  0.000000  0.000000
+    O   0.000000  0.500000  0.000000
+    O   0.500000  0.000000  0.000000
+    Sr  0.000000  0.000000  0.426670
+    Sr  0.500000  0.500000  0.073330
+    O   0.500000  0.500000  0.395220
+    O   0.000000  0.000000  0.104780
+    Bi  0.500000  0.500000  0.312610
+    Bi  0.000000  0.000000  0.187390
+    O   0.000000  0.000000  0.314560
+    O   0.500000  0.500000  0.185440
+    Cu  0.500000  0.500000  0.500000
+    O   0.500000  0.000000  0.500000
+    O   0.000000  0.500000  0.500000
+    Sr  0.500000  0.500000  0.926670
+    Sr  0.000000  0.000000  0.573330
+    O   0.000000  0.000000  0.895220
+    O   0.500000  0.500000  0.604780
+    Bi  0.000000  0.000000  0.812610
+    Bi  0.500000  0.500000  0.687390
+    O   0.500000  0.500000  0.814560
+    O   0.000000  0.000000  0.685440
+
+K_POINTS automatic
+   5  5  3  0  0  0

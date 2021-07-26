@@ -1,0 +1,9 @@
+[
+    {"name": "Cu", "outputs": [3, 10, 17, 24]},
+    {"name": "O",  "outputs": [4, 11, 18, 25]},
+    {"name": "O",  "outputs": [5, 12, 19, 26]},
+    {"name": "O",  "outputs": [1,  8, 15, 22]},
+    {"name": "O",  "outputs": [6, 13, 20, 27]},
+    {"name": "La", "outputs": [7, 14, 21, 28]},
+    {"name": "La", "outputs": [2,  9, 16, 23]}
+]

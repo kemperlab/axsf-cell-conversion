@@ -1,0 +1,64 @@
+&control
+    calculation = ''
+    restart_mode = 'from_scratch'
+    prefix = 'La2CuO4'
+    tstress = .true.
+    tprnfor = .true.
+    pseudo_dir = '/home/PHONONS/pseudo/'
+    outdir = '/home/PHONONS/tmp/'
+    forc_conv_thr = 1.0d-2
+/
+
+&system
+    ibrav = 0
+    nat = 14
+    ntyp = 3
+    ecutwfc = 30.0
+    ecutrho = 200.0
+    smearing = 'gauss'
+    occupations = 'smearing'
+    degauss = 0.02
+/
+
+&electrons
+    electron_maxstep = 100
+    diagonalization = 'david'
+    mixing_mode = 'local-TF'
+    mixing_beta = 0.7
+    conv_thr = 1.0d-5
+/
+
+&ions
+/
+
+&cell
+/
+
+ATOMIC_SPECIES
+    La  138.91  la_pbe_v1.uspp.F.UPF
+    Cu  63.546  cu_pbe_v1.2.uspp.F.UPF
+    O   15.999  o_pbe_v1.2.uspp.F.UPF
+
+CELL_PARAMETERS angstrom
+    3.820000  0.000000  0.000000
+    0.000000  3.820000  0.000000
+    0.000000  0.000000  13.220000
+
+ATOMIC_POSITIONS crystal
+    Cu  0.000000  0.000000  0.000000
+    O   0.000000  0.500000  0.000000
+    O   0.500000  0.000000  0.000000
+    O   0.500000  0.500000  0.314400
+    O   0.000000  0.000000  0.185600
+    La  0.500000  0.500000  0.138800
+    La  0.000000  0.000000  0.361200
+    Cu  0.500000  0.500000  0.500000
+    O   0.500000  0.000000  0.500000
+    O   0.000000  0.500000  0.500000
+    O   0.000000  0.000000  0.814400
+    O   0.500000  0.500000  0.685600
+    La  0.000000  0.000000  0.638800
+    La  0.500000  0.500000  0.861200
+
+K_POINTS automatic
+   5  5  3  0  0  0

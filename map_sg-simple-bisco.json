@@ -1,0 +1,13 @@
+[
+    {"name": "Cu", "outputs": [5]},
+    {"name": "O",  "outputs": [6]},
+    {"name": "O",  "outputs": [7]},
+    {"name": "Sr", "outputs": [1]},
+    {"name": "Sr", "outputs": [8]},
+    {"name": "O",  "outputs": [2]},
+    {"name": "O",  "outputs": [9]},
+    {"name": "Bi", "outputs": [3]},
+    {"name": "Bi", "outputs": [10]},
+    {"name": "O",  "outputs": [4]},
+    {"name": "O",  "outputs": [11]}
+]

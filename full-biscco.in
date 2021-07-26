@@ -1,0 +1,83 @@
+&CONTROL
+    calculation = 'relax'
+    restart_mode = 'from_scratch'
+    prefix = 'bccrelax'
+    tstress = .true.
+    tprnfor = .true.
+    pseudo_dir = '/home/PHONONS/pseudo'
+    outdir = '/home/PHONONS/tmp/'
+/
+
+&SYSTEM
+    ibrav = 0
+    nat = 30
+    ntyp = 5
+    ecutwfc = 80
+    ecutrho = 600
+    smearing = 'gauss'
+    occupations = 'smearing'
+    degauss = 0.005
+/
+
+&ELECTRONS
+    electron_maxstep = 100
+    diagonalization = 'david'
+    mixing_mode = 'local-TF'
+    mixing_beta = 0.7
+    conv_thr = 1.0d-7
+/
+
+&IONS
+/
+
+&CELL
+/
+
+ATOMIC_SPECIES
+   Bi  208.9804   Bi.pbe-dn-kjpaw_psl.1.0.0.UPF
+   Sr   87.62     Sr.pbe-spn-kjpaw_psl.1.0.0.UPF
+   Ca   40.078    Ca.pbe-spn-kjpaw_psl.1.0.0.UPF
+   Cu   63.54600  Cu.pbe-dn-kjpaw_psl.0.2.UPF
+    O   15.99940   O.pbe-n-kjpaw_psl.0.1.UPF
+
+CELL_PARAMETERS angstrom
+    5.4  0.0  0.0
+    0.0  5.4  0.0
+    0.0  0.0  30.7
+
+ATOMIC_POSITIONS crystal
+    Ca  0.00  0.00  0.00000000
+    Cu  0.50  0.50  0.04931214
+    O   0.00  0.50  0.05143572
+    O   0.50  0.00  0.05143572
+    Sr  0.00  0.00  0.10974190
+    O   0.50  0.50  0.13441861
+    Bi  0.50  0.50  0.20143713
+    O   0.00  0.00  0.20022240
+    Bi  0.00  0.00  0.29856287
+    O   0.50  0.50  0.29977760
+    Sr  0.50  0.50  0.39025810
+    O   0.00  0.00  0.36558139
+    Cu  0.00  0.00  0.45068786
+    O   0.50  0.00  0.44856438
+    O   0.00  0.50  0.44856438
+    Ca  0.50  0.50  0.50000000
+    Cu  0.00  0.00  0.54931214
+    O   0.50  0.00  0.55143572
+    O   0.00  0.50  0.55143572
+    Sr  0.50  0.50  0.60974190
+    O   0.00  0.00  0.63441861
+    Bi  0.00  0.00  0.70143713
+    O   0.50  0.50  0.70022240
+    Bi  0.50  0.50  0.79856287
+    O   0.00  0.00  0.79977760
+    Sr  0.00  0.00  0.89025810
+    O   0.50  0.50  0.86558139
+    Cu  0.50  0.50  0.95068786
+    O   0.00  0.50  0.94856438
+    O   0.50  0.00  0.94856438
+
+
+K_POINTS automatic
+   9  9  9  0  0  0
+
